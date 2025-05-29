@@ -16,7 +16,8 @@
   <name>petclinic</name>
 
   <properties>
-
+    <sonar.organization>nubeera-imran-sonar</sonar.organization>
+  <sonar.projectKey>NubeEra-ImranAli_spring-petclinic</sonar.projectKey>
     <!-- Generic properties -->
     <java.version>17</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -178,6 +179,11 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.9.1.2184</version>
+    </plugin>
       <plugin>
         <groupId>io.spring.javaformat</groupId>
         <artifactId>spring-javaformat-maven-plugin</artifactId>
