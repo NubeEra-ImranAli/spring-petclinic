@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://oauth: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@github.com/NubeEra-ImranAli/spring-petclinic.git'
+                git branch: 'main', url: 'https://oauth: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@github.com/NubeEra-ImranAli/spring-petclinic.git'
             }
         }
 
